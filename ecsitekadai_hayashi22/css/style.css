@@ -1,0 +1,422 @@
+/*全体
+-----------------*/
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*clearfix
+-----------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+/*
+-----------------*/
+/*
+.wrap{
+    max-width: 100%;
+    margin:0 auto;
+}
+*/
+/*ここからヘッダー*/
+#header{
+    width: 960px;
+    margin:0 auto;
+}
+
+.header1{
+    justify-content: space-between;
+    display: flex;
+}
+
+.headertext{
+    font-size: 10px;
+}
+.reservationlink{
+    text-align: center;
+}
+.reservationbutton{
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+
+.reservationbutton:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width 960px;
+    justify-content: space-around;
+    display: flex;
+    font-size: 15px;
+}
+
+/*ここからメインビジュアル*/
+
+/*ここから滞在日程予約*/
+#reservationdate{
+    width:960px;
+    margin: 0 auto;
+    font-size:15px;
+    margin-top:-200px;
+    padding-top:200px;
+}
+
+.rdtext{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color:darkgoldenrod;
+    color:white;
+    text-align: center;
+}
+.reservationdetail{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:black;
+    color:white;
+    width 960px;
+    justify-content: space-around;
+    display: flex;
+    font-size: 13px;
+}
+
+.contact{
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+/*ここからメインビジュアル2*/
+.mainvisual2{
+    width: 100%;
+    height: 420px;
+    position: relative;
+    background-image: url(../img/top/intro_bg.png);
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.text{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slogan1{
+    text-align: center;
+    color:white;
+    font-size:39px;
+    
+}
+.slogan1:before{
+    content:"";
+    display: block;
+    height: 5px;
+    background-image: url(../img/top/intro_title_line.png);
+    background-size: contain;
+    position: relative;
+    
+}
+
+.slogan1:after{
+    content:"";
+    display: block;
+    height: 5px;
+    background-image: url(../img/top/intro_title_line.png);
+    background-size: contain;
+    position: relative;
+    
+}
+.description{
+    display: inline-block;
+    text-align: left;
+    color:white;
+    font-size:15px;
+    padding-top: 80px;
+    line-height: 1.75;
+}
+/*ここからメインビジュアル3*/
+.mainvisual3{
+    width: 100%;
+    height: 420px;
+    position: relative;
+    background-image: url(../img/top/bar_sec_bg.png);
+    background-size: cover;
+    padding-top: 110px;
+}
+.slogan{
+    text-align: center;
+    color:white;
+    font-size:39px;
+    
+}
+.detail1{
+    text-align: center;
+    padding-top: 40px;
+}
+.detailbutton{
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+
+.detailbutton:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+/*ここからメインビジュアル4*/
+.mainvisual4{
+    width: 100%;
+    height: 420px;
+    position: relative;
+    background-image: url(../img/top/facility_sec_bg.png);
+    background-size: cover;
+    padding-top: 110px;
+}
+.detail2{
+    text-align: center;
+    padding-top: 40px;
+}
+/*ここからおすすめプラン*/
+#recommendplan{
+   margin-top:-100px;
+  padding-top:100px;
+}
+.recommendplan{
+    height:365px;
+    background-image: url(../img/top/plan_sec_bg.png);
+    background-size: contain;
+}
+.recplan{
+    padding-top: 13px;
+    text-align: center;
+    font-size: 24px;
+}
+.reclist{
+    width: 960px;
+    height:234px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-bottom: 13px;
+}
+.rec-thumb{
+    background-color: white;
+    height: 266px;
+}
+.rec-item h2{
+    font-size: 19px;
+    text-align: center
+}
+
+.rec-item p{
+    font-size: 13px;
+    text-align: center;
+}
+.woman{
+    color:red;
+}
+.man{
+    color:blue;
+}
+
+/*ここからWhat's new*/
+
+.new{
+    height: 305px;
+    background-image: url(../img/top/news_bg.png);
+    background-size: contain;
+    padding-top: 13px;
+}
+.n-title{
+    margin: 0px auto;
+    color:white;
+    background-color: gray;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*ここからSNSパート*/
+.sns{
+    height: 731px;
+    width: 100%;
+    background-image: url(../img/top/plan_sec_bg.png);
+    background-size: contain;
+    padding-top: 30px;
+}
+.youtube{
+    width:960px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px auto;
+}
+
+.sns2{
+    width: 960px;
+    height:auto;
+    display: flex;
+    justify-content:space-between;
+    margin: 0px auto;
+    padding-top: 60px;
+}
+
+.amenity{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/footer/f_banner_link_01.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    font-size: 13px;
+}
+
+.amenity:hover{
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+  opacity: 0.75;
+}
+
+.bargain{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/footer/f_banner_link_02.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    font-size: 13px;
+    
+}
+
+.bargain:hover{
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+  opacity: 0.75;
+}
+
+.concept{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/footer/f_banner_link_03.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    font-size: 13px;
+}
+
+.concept:hover{
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+  opacity: 0.75;
+}
+
+.recruitment{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/footer/f_banner_link_04.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 180px;
+    color: white;
+    font-size: 13px;
+}
+
+.recruitment:hover{
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+  opacity: 0.75;
+}
+
+.sns3{
+    width: 960px;
+    height:auto;
+    display: flex;
+    justify-content:center;
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+/*ここからフッターパート*/
+#footer{
+    width:100%;
+    height: 108px;
+    background-color: #707070;
+}
+.foot{
+    width: 960px;
+    height: 108px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.footertext{
+    font-size: 14px;
+    line-height: 1.75;
+}
+/*ここからページトップボタン*/
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
